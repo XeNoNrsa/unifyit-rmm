@@ -1,0 +1,33 @@
+# UnifyIT RMM Commit Message Template
+# Format: <type>(<scope>): <subject>
+#
+# Type (choose one):
+# feat:     New feature
+# fix:      Bug fix
+# improve:  Enhancement to existing feature (NOT removal)
+# docs:     Documentation only
+# test:     Tests only
+# perf:     Performance improvement
+# refactor: Code restructure (must preserve functionality)
+# chore:    Maintenance tasks
+#
+# Scope (component being changed):
+# agent, backend, frontend, api, auth, db, ui, docs, ci, etc.
+#
+# Subject (50 chars max):
+# - Use imperative mood ("Add" not "Added" or "Adds")
+# - No capitalization of first letter
+# - No period at the end
+#
+# Body (wrap at 72 chars, explain what and why, not how):
+#
+
+
+# Footer (optional, for breaking changes or issue references):
+# BREAKING CHANGE: description
+# Fixes #123
+# Refs #456
+
+# 🤖 Generated with [Claude Code](https://claude.ai/code)
+#
+# Co-Authored-By: Claude <noreply@anthropic.com>

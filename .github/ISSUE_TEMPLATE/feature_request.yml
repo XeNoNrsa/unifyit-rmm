@@ -1,0 +1,169 @@
+name: 🚀 Feature Request
+description: Suggest a new feature for UnifyIT RMM
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please fill out the form below with as much detail as possible.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have checked the documentation and PRD
+          required: true
+        - label: This feature aligns with UnifyIT RMM's goals
+          required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - P1 - High (Critical for MSP operations)
+        - P2 - Medium (Improves efficiency significantly)
+        - P3 - Low (Nice to have, minor improvement)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component would this feature affect?
+      options:
+        - Frontend (Dashboard, UI)
+        - Backend (API, Services)
+        - Agent (Rust client)
+        - Authentication/Authorization
+        - Monitoring/Alerts
+        - Remote Access
+        - Backup System
+        - PSA Integration
+        - Network Monitoring
+        - AI/ML Features
+        - Marketplace
+        - Billing/Payments
+        - Multi-tenancy
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Provide a clear and concise summary of the feature
+      placeholder: What feature would you like to see?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        Is your feature request related to a problem? Please describe.
+        A clear and concise description of what the problem is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: |
+        A clear and concise description of what you want to happen.
+        Include any specific requirements or functionality.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Describe any alternative solutions you've considered
+      placeholder: What other approaches could solve this problem?
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Provide specific use cases for this feature
+      placeholder: |
+        1. As a MSP technician, I want to...
+        2. As a customer admin, I need to...
+        3. When managing 1000+ devices, I expect to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what "done" looks like for this feature
+      placeholder: |
+        - [ ] Feature works in all supported browsers
+        - [ ] Performance meets requirements
+        - [ ] Multi-tenant isolation maintained
+        - [ ] API endpoints documented
+        - [ ] Tests written and passing
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Please check all that apply
+      options:
+        - label: This feature requires database changes
+        - label: This feature affects the agent
+        - label: This feature requires new API endpoints
+        - label: This feature affects billing/pricing
+        - label: This feature requires third-party integrations
+        - label: This feature affects multi-tenant isolation
+        - label: This feature requires documentation updates
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Wireframes
+      description: If applicable, provide mockups or wireframes
+
+  - type: textarea
+    id: technical_considerations
+    attributes:
+      label: Technical Considerations
+      description: Any technical constraints or considerations?
+      placeholder: |
+        - Performance requirements
+        - Security implications
+        - Scalability concerns
+        - Integration complexity
+
+  - type: textarea
+    id: business_value
+    attributes:
+      label: Business Value
+      description: What's the business impact of this feature?
+      placeholder: |
+        - How does this help MSPs?
+        - Revenue impact
+        - Customer retention
+        - Competitive advantage
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context or information about the feature request

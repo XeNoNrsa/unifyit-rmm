@@ -1,0 +1,53 @@
+# UnifyIT RMM Code Owners
+# Global rule - all files require review from core team
+* @XeNoNrsa
+
+# Documentation
+*.md @XeNoNrsa
+docs/ @XeNoNrsa
+
+# Configuration files
+*.yml @XeNoNrsa
+*.yaml @XeNoNrsa
+*.json @XeNoNrsa
+.env* @XeNoNrsa
+Dockerfile* @XeNoNrsa
+docker-compose* @XeNoNrsa
+
+# Security-sensitive files
+.github/ @XeNoNrsa
+infrastructure/ @XeNoNrsa
+helm/ @XeNoNrsa
+terraform/ @XeNoNrsa
+
+# Frontend code
+frontend/ @XeNoNrsa
+*.ts @XeNoNrsa
+*.tsx @XeNoNrsa
+*.js @XeNoNrsa
+*.jsx @XeNoNrsa
+
+# Backend code
+backend/ @XeNoNrsa
+*.py @XeNoNrsa
+
+# Agent code
+agent/ @XeNoNrsa
+*.rs @XeNoNrsa
+Cargo.toml @XeNoNrsa
+Cargo.lock @XeNoNrsa
+
+# Database migrations and schemas
+*/migrations/ @XeNoNrsa
+*/schemas/ @XeNoNrsa
+*.sql @XeNoNrsa
+
+# CI/CD and deployment
+.github/workflows/ @XeNoNrsa
+scripts/ @XeNoNrsa
+
+# Core project files
+CLAUDE.md @XeNoNrsa
+PLANNING.md @XeNoNrsa
+TASKS.md @XeNoNrsa
+PRD.md @XeNoNrsa
