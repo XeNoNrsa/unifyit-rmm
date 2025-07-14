@@ -1,0 +1,213 @@
+# UnifyIT RMM .gitignore
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# Secrets and Keys
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+keys/
+certs/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+cover/
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.swp
+*.swo
+*~
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Build artifacts
+*.tar.gz
+*.zip
+*.war
+*.jar
+
+# Local configuration
+config/local.yaml
+config/local.json
+local.config.js
+
+# Test files
+test-results/
+playwright-report/
+test-results/
+tests/screenshots/
+tests/videos/
+
+# Monitoring and observability
+*.prof
+*.trace
+
+# Documentation builds
+docs/_build/
+docs/site/
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraformrc
+terraform.rc
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Helm
+charts/*.tgz
+
+# Cloud provider CLI
+.aws/
+.gcp/
+.azure/
+
+# Application specific
+uploads/
+storage/
+cache/
+sessions/
+
+# Development databases
+dev.db
+development.db
+test.db
